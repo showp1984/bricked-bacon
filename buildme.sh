@@ -217,7 +217,7 @@ gotokcontrol
 #gpu
 echo "[BUILD]: Cloning KControl msm gpu module source...";
 if [ $DEVARCH == "msm" ]; then
-    git clone https://git.bricked.de/kcontrol/kcontrol_gpu_msm.git
+    git clone -b master_wo_iofr https://git.bricked.de/kcontrol/kcontrol_gpu_msm.git
 elif  [ $DEVARCH == "tegra" ]; then
     git clone https://git.bricked.de/kcontrol/kcontrol_gpu_tegra.git
 fi
